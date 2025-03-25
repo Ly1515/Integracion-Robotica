@@ -22,7 +22,7 @@ class Calculadora:  # ← D101: Missing docstring in public class
             print(entrada['operacion'],':', entrada['resultado'])  # ← black cambiaría el estilo, falta espaciado
 
     def guardar_historial(self,archivo):print("Guardando...")  # ← falta docstring, mal estilo, todo en una línea
-        with open(archivo,'w') as f:
+    with open(archivo,'w') as f:
             json.dump(self.historial,f, indent=4)
 
 def ejecutar():print("Iniciando ejecución")  # ← sin docstring, estilo incorrecto
